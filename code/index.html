@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <title>해오름부동산</title>
+</head>
+<body>
+    <div class="container">
+        <h1>해오름부동산</h1>
+
+        <div class="calculator">
+            <h2>평수 계산기</h2>
+            <textarea id="inputText" placeholder="정보를 입력하세요." rows="8"></textarea>
+            <br>
+            <button onclick="calculateArea()">계산하기</button>
+            <button onclick="copyToClipboard()">복사하기</button>
+            <button onclick="clearInputText()">초기화</button>
+            <div id="result" class="result"></div>
+        </div>
+
+        <div class="hug-calculator">
+            <h2>HUG안심 전세대출 가능여부</h2>
+            <label for="deposit">전세 보증금 (만원)</label>
+            <input type="text" id="deposit" placeholder="전세 보증금을 입력하세요">
+            <br>
+            <label for="assessedValue">공시지가 (만원)</label>
+            <input type="text" id="assessedValue" placeholder="공시지가를 입력하세요">
+            <br>
+            <label for="loan">현재 융자 (만원)</label>
+            <input type="text" id="loan" placeholder="현재 융자를 입력하세요">
+            <br>
+            <button onclick="calculateHug()">계산하기</button>
+            <button onclick="copyHugToClipboard()">복사하기</button>
+            <button onclick="clearHugInput()">초기화</button>
+            <div id="hugResult" class="result"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
